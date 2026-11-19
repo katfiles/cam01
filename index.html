@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CAM_01 // EM DIRETO</title>
+<title>CAM_03 // EM DIRETO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -144,12 +144,12 @@
 
   <div class="screen">
     <div class="frame" id="frame">
-      <img class="feed" id="feed" src="feed.jpg" alt="Imagem de câmara de vigilância: uma figura em imagem térmica na sala 4.15. Para o sensor, não tens identidade.">
-      <span class="stamp" data-x="170" data-y="368" data-w="530"></span>
-      <span class="stamp" data-x="170" data-y="2128" data-w="530"></span>
-      <span class="hud" data-left="167" data-y="262" data-cap="42"><span class="live"><span class="dot"></span>EM DIRETO</span></span>
-      <span class="hud" data-left="167" data-y="2041" data-cap="42"><span class="live"><span class="dot"></span>EM DIRETO</span></span>
-      <span class="hud" data-right="2475" data-y="1848" data-cap="46">SIG ▮▮▮▮▯ // REC 1080P</span>
+      <img class="feed" id="feed" src="feed.jpg" alt="Imagem de câmara de vigilância: uma figura em imagem térmica na sala 4.15. Não há cantos cegos nesta sala.">
+      <span class="stamp" data-x="115" data-y="228" data-w="344"></span>
+      <span class="stamp" data-x="115" data-y="1412" data-w="344"></span>
+      <span class="hud" data-left="110" data-y="168" data-cap="30"><span class="live"><span class="dot"></span>EM DIRETO</span></span>
+      <span class="hud" data-left="110" data-y="1357" data-cap="30"><span class="live"><span class="dot"></span>EM DIRETO</span></span>
+      <span class="hud" data-right="1632" data-y="1235" data-cap="28">SIG ▮▮▮▮▯ // REC 1080P</span>
     </div>
     <div class="scan"></div>
     <div class="noise"></div>
@@ -159,7 +159,7 @@
 </div>
 
 <script>
-  const IMG_W = 2550, IMG_H = 3778;
+  const IMG_W = 1684, IMG_H = 2528;
   const frame = document.getElementById('frame');
   const stamps = [...document.querySelectorAll('.stamp')];
   function stampText(now) {
@@ -205,7 +205,7 @@
   // boot sequence, then power on the feed
   const lines = [
     ['A ESTABELECER LIGAÇÃO…', ''],
-    ['CAM_01 // FBAUL // SALA 4.15', ''],
+    ['CAM_03 // FBAUL // SALA 4.15', ''],
     ['SENSOR TÉRMICO ............ ', 'OK', 'ok'],
     ['CORPO DETETADO ............ ', '36.5°C', 'ok'],
     ['IDENTIDADE ................ ', 'NÃO ENCONTRADA', 'warn'],
